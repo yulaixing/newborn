@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/kanzhun-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kanzhun-parent/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kanzhun-parent/kanzhun-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kanzhun-udp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kanzhun-websocket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kanzhunparent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/udp" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

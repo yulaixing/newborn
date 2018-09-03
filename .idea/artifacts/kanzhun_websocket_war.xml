@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="kanzhun-websocket:war">
+    <output-path>$PROJECT_DIR$/kanzhun-websocket/target</output-path>
+    <root id="archive" name="kanzhun-websocket.war">
+      <element id="artifact" artifact-name="kanzhun-websocket:war exploded" />
+    </root>
+  </artifact>
+</component>

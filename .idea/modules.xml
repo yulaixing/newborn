@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kanzhun-parent/kanzhun-common/kanzhun-common.iml" filepath="$PROJECT_DIR$/kanzhun-parent/kanzhun-common/kanzhun-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kanzhun-parent/kanzhun-parent.iml" filepath="$PROJECT_DIR$/kanzhun-parent/kanzhun-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kanzhun-udp/kanzhun-udp.iml" filepath="$PROJECT_DIR$/kanzhun-udp/kanzhun-udp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kanzhun-websocket/kanzhun-websocket.iml" filepath="$PROJECT_DIR$/kanzhun-websocket/kanzhun-websocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/newborn.iml" filepath="$PROJECT_DIR$/.idea/newborn.iml" />
+    </modules>
+  </component>
+</project>

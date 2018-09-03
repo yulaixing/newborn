@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -18,7 +19,9 @@ public class WebSocketServerApplication {
 
     @RequestMapping("hello")
     @ResponseBody
-    public String hello(){
+    public String hello(@RequestParam( name = "price",defaultValue = "0") double price){
+
+        System.out.println(price);
         return "hello world me！";
     }
 
