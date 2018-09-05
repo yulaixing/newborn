@@ -36,11 +36,15 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-websocket:1.5.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-websocket:4.3.13.RELEASE" />
           <element id="archive" name="kanzhun-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="kanzhun-common" />
           </element>
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.13.RELEASE" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.49" />
         </element>
       </element>
       <element id="directory" name="META-INF">
