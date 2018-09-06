@@ -48,7 +48,7 @@ public class MyHandler implements WebSocketHandler {
 
         try {
             Object payload = webSocketMessage.getPayload();
-            JSONObject jo = (JSONObject) JSON.toJSON(payload);
+            final JSONObject jo = JSON.parseObject(payload.toString());
             System.out.println(jo.get("id"));
             System.out.println(jo.get("message") + ":来自" + (String) webSocketSession.getAttributes().get("WEBSOCKET_USERID") + "的消息");
             sendMessageToUser(jo.get("id")+"",new TextMessage("服务器收到了，hello!"));
@@ -131,7 +131,9 @@ public class MyHandler implements WebSocketHandler {
 
     @Override
     public boolean supportsPartialMessages() {
+
         return false;
+
     }
 
     /**
