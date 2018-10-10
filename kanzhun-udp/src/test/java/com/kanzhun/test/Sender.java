@@ -6,6 +6,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 /**
+ * 发送方相当客户端
  * @author:xing.yl
  * @date: 18/9/3
  */

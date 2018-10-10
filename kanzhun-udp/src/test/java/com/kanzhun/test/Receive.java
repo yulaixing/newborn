@@ -5,6 +5,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 /**
+ * 接收器相当于服务器
  * @author:xing.yl
  * @date: 18/9/3
  */
