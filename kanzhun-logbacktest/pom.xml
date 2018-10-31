@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>logbacktest</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <name>logbacktest Maven Webapp</name>
     <!-- FIXME change it to the project's website -->

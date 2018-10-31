@@ -10,6 +10,8 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 /**
  * @author:xing.yl
  * @date: 18/9/4
+ *
+ * enablewebsocket 可以使用websocket
  */
 @Configuration
 @EnableWebSocket

@@ -10,7 +10,7 @@ public class Log4jTest {
 
     public static void main(String[] args) {
 
-        Logger info = Logger.getLogger("info");
+        Logger info = Logger.getLogger(Log4jTest.class);
         info.info("log4jtest aa aaa");
 
     }

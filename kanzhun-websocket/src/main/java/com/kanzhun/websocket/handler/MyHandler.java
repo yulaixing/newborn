@@ -1,6 +1,5 @@
 package com.kanzhun.websocket.handler;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Service;
 import org.springframework.web.socket.*;
@@ -48,7 +47,7 @@ public class MyHandler implements WebSocketHandler {
 
         try {
             Object payload = webSocketMessage.getPayload();
-            final JSONObject jo = JSON.parseObject(payload.toString());
+            final JSONObject jo = JSONObject.parseObject(payload.toString());
             System.out.println(jo.get("id"));
             System.out.println(jo.get("message") + ":来自" + (String) webSocketSession.getAttributes().get("WEBSOCKET_USERID") + "的消息");
             sendMessageToUser(jo.get("id")+"",new TextMessage("服务器收到了，hello!"));
