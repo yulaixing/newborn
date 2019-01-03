@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--p配置文件 -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <!--多properties文件配置-->
+        <property name="locations">
+            <list>
+                <value>classpath*:conf/server.properties</value>
+                <!--<value>spring-jdbc.properties</value>-->
+            </list>
+        </property>
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+
+    <bean id="sessionManage" class="com.kanzhun.chat.broker.firstDemo.session.SessionManage"/>
+
+    <bean id="channelIn" class="com.kanzhun.chat.broker.firstDemo.handler.ChannelIn" >
+        <property name="sessionManage" ref="sessionManage" />
+
+    </bean>
+
+
+    <bean id="channelOut" class="com.kanzhun.chat.broker.firstDemo.handler.ChannelOut" />
+
+
+    <bean id="fistDemoServer" class="com.kanzhun.chat.broker.firstDemo.server.FirstDemoServer" init-method="start">
+        <property name="channelIn" ref="channelIn" />
+        <property name="channelOut" ref="channelOut" />
+        <property name="port"     value="${port}" />
+    </bean>
+
+
+
+
+
+
+
+</beans>

@@ -10,7 +10,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>kanzhun-websocket</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../kanzhun-nettyserver</module>
+    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>

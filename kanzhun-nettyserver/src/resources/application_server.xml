@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--p配置文件 -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <!--多properties文件配置-->
+        <property name="locations">
+            <list>
+                <value>classpath*:conf/server.properties</value>
+                <!--<value>spring-jdbc.properties</value>-->
+            </list>
+        </property>
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+
+
+    <bean id="testBean" class="com.kanzhun.test.TestBean" >
+        <property name="id" value="${abc}"/>
+    </bean>
+
+
+</beans>
